@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Etch A Sketch</h1>
+    </header>
+    
+    <div class="flex-container">
+        <div class="empty-container"></div>
+        <div class="inner-container">
+            <div class="flex-item">
+                <h4>How many squares?</h4>
+                <p id="range-count"></p>
+                <input type="range" min="16" max="100" id="user-box">
+            </div>
+
+            <div class="flex-item">
+                <p>Choose color:</p>
+                <input type="color" id="color">
+            </div>
+            <div class="flex-item">
+
+                <button id="rainbow" class="button">Rainbow Mode</button>
+            </div>
+            <div class="flex-item">
+                <button class="reset button">Clear</button>
+
+            </div>
+            
+
+        </div>
+        
+        <div class="container"></div>
+        <div class="empty-container"></div>
+    </div>
+    <div class="container2"></div>
+    <script src="app.js"></script>
+</body>
+</html>
